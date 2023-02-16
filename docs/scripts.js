@@ -1,6 +1,6 @@
-const CREAR_ESTUDIANTE = "http://localhost:8080/avoris/estudiante/save"
-const GET_ESTUDIANTE = "http://localhost:8080/avoris/estudiante/"
-const LIST_ESTUDIANTES = "http://localhost:8080/avoris/estudiante/list"
+const CREAR_ESTUDIANTE = "https://avorischallenge.onrender.com/avoris/estudiante/save"
+const GET_ESTUDIANTE = "https://avorischallenge.onrender.com/avoris/estudiante/"
+const LIST_ESTUDIANTES = "https://avorischallenge.onrender.com/avoris/estudiante/list"
 
 const nombre = document.getElementById("nombre");
 const edad = document.getElementById("edad");
