@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Avoris Challenge</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body onload="init()">
+        <section class="seccion">
+            <div class="form">
+                <h4 class="tiulo-seccion">Ingrese un estudiante</h4>
+                <input class="control" type="text" name="nombre" id="nombre" placeholder="Ingrese un nombre">
+                <input class="control" type="text" name="materia" id="materia" placeholder="Ingrese nombre de la materia">
+                <input class="control" type="number" name="edad" id="edad" placeholder="Ingrese una edad">
+                <input class="control" type="number" name="calificacion" id="calificacion" placeholder="Ingrese calificacion">
+                <input class="control" type="date" name="fecha_de_finalizacion" id="fecha_de_finalizacion" placeholder="Ingrese fecha de finalizacion">
+                <input class="add-button" type="button" value="Añadir materia" onclick="añadirMateria()">
+                <input class="send-button" type="button" value="Registrar" onclick="registerEstudiante()">
+                <input class="clean-button" type="button" value="Limpiar" onclick="clearForm()">
+            </div>
+            <div id="lista-materias" class="materias"></div>
+        </section>
+        <section class="seccion">
+            <div class="tabla">
+                <h4 class="tiulo-seccion">Estudiantes</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="nombre">Nombre</th>
+                            <th class="edad">Edad</th>
+                            <th class="fecha">Fecha de finalizacion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-estudiantes">
+                    </tbody>
+                </table>
+            </div>
+            <div class="materias-estudiante">
+                <h4 class="tiulo-seccion">Materias cursadas</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre de la materia</th>
+                            <th>calificacion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-materias">
+                    </tbody>
+                </table>
+            </div-->
+        </section>
+        <div class="esperando invisible" id="bloqueo"></div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
